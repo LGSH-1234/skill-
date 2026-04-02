@@ -1,13 +1,13 @@
 ---
 title: AI 情感陪伴产品 PRD 生成器
 summary: 根据用户调研、会议记录、竞品截图等材料，快速生成结构完整、适合团队落地的 AI 情感陪伴产品 PRD。
-category: 产品文档生成
+category: AI 产品与需求
 tags:
   - PRD
   - AI产品
   - 用户研究
   - 产品规划
-featured: true
+featured: false
 heroNote: 把模糊的产品方向，整理成可执行的需求文档。
 scenarios:
   - 已经有用户调研、会议纪要或竞品资料，需要快速汇总成正式 PRD

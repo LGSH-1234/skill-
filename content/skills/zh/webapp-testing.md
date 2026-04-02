@@ -1,7 +1,7 @@
 ---
 title: Web Application Testing
 summary: 使用 Playwright 对本地 Web 应用做验证、调试、截图与交互巡检的测试工具集。
-category: 测试与效率工具
+category: 测试与浏览器自动化
 tags:
   - Playwright
   - 前端测试

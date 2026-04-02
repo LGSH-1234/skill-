@@ -1,7 +1,7 @@
 ---
 title: Dify Workflow Builder
 summary: 根据流程图、截图或文字描述，生成可直接导入 Dify 的工作流或 Agent DSL。
-category: 流程图与工作流
+category: 工作流与自动化
 tags:
   - Dify
   - Workflow

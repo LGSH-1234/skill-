@@ -7,7 +7,7 @@ type SkillCardProps = {
 
 export function SkillCard({ skill }: SkillCardProps) {
   return (
-    <article className="panel flex h-full flex-col justify-between p-6 transition duration-200 hover:-translate-y-1 hover:shadow-[0_16px_40px_rgba(17,17,17,0.08)]">
+    <article className="panel flex h-full flex-col justify-between p-6 transition duration-300 hover:-translate-y-1 hover:border-white hover:shadow-[0_18px_48px_rgba(17,17,17,0.08)]">
       <div className="space-y-5">
         <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
           <span>{skill.category}</span>
@@ -22,12 +22,12 @@ export function SkillCard({ skill }: SkillCardProps) {
       <div className="mt-8 flex items-end justify-between gap-4">
         <div className="flex flex-wrap gap-2">
           {skill.tags.slice(0, 3).map((tag) => (
-            <span key={tag} className="rounded-full border border-line bg-white/50 px-3 py-1 text-xs text-muted">
+            <span key={tag} className="rounded-full border border-line bg-white/50 px-3 py-1 text-xs text-muted transition duration-300">
               {tag}
             </span>
           ))}
         </div>
-        <Link href={`/skills/${skill.slug}`} className="text-sm font-medium text-foreground">
+        <Link href={`/skills/${skill.slug}`} className="text-sm font-medium text-foreground transition hover:text-accent">
           查看详情
         </Link>
       </div>

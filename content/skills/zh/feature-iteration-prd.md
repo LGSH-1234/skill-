@@ -1,7 +1,7 @@
 ---
 title: 功能迭代 PRD 生成工具
 summary: 根据当前产品截图、竞品截图或差异说明，快速产出面向迭代场景的结构化 PRD。
-category: 产品文档生成
+category: AI 产品与需求
 tags:
   - 功能迭代
   - PRD

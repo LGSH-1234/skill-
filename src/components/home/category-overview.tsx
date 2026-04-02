@@ -1,3 +1,7 @@
+'use client'
+
+import { StaggerGroup, StaggerItem } from '@/components/motion/reveal'
+
 type CategoryOverviewProps = {
   categories: Array<{ name: string; count: number }>
 }
@@ -11,18 +15,20 @@ export function CategoryOverview({ categories }: CategoryOverviewProps) {
           <h2 className="headline-md">以更清楚的分类，呈现我的能力轮廓。</h2>
         </div>
         <p className="max-w-2xl text-sm leading-7 text-muted">
-          先让浏览路径足够轻，再让内容理解足够深。每一类 Skill 都围绕真实问题、具体方法与持续迭代展开。
+          每一种分类，都是方法、判断与表达的沉淀。
         </p>
       </div>
 
-      <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+      <StaggerGroup className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
         {categories.map((category) => (
-          <div key={category.name} className="panel p-6 transition duration-200 hover:-translate-y-1">
-            <p className="text-sm text-muted">{category.count} 项</p>
-            <h3 className="mt-3 text-lg font-medium text-foreground">{category.name}</h3>
-          </div>
+          <StaggerItem key={category.name}>
+            <div className="panel p-6 transition duration-300 hover:-translate-y-1 hover:border-white hover:shadow-[0_18px_48px_rgba(17,17,17,0.08)]">
+              <p className="text-sm text-muted">{category.count} 项</p>
+              <h3 className="mt-3 text-lg font-medium text-foreground">{category.name}</h3>
+            </div>
+          </StaggerItem>
         ))}
-      </div>
+      </StaggerGroup>
     </section>
   )
 }

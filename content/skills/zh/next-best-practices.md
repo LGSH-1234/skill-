@@ -1,7 +1,7 @@
 ---
 title: Next.js Best Practices
 summary: 汇总 Next.js 在文件约定、RSC 边界、数据模式、元数据、性能和调试上的关键实践。
-category: 开发与工程实践
+category: 工程与架构实践
 tags:
   - Next.js
   - React
