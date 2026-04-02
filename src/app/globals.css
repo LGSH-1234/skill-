@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.6), transparent 32%),
+    linear-gradient(180deg, #f7f4ed 0%, #f3efe6 100%);
+  color: #111111;
+  font-family: var(--font-noto-sans-sc), var(--font-manrope), Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(31, 59, 47, 0.14);
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-8xl px-6 sm:px-8 lg:px-12;
+  }
+
+  .section-space {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .eyebrow {
+    @apply text-[11px] uppercase tracking-[0.28em] text-muted;
+  }
+
+  .headline-xl {
+    @apply text-[2.6rem] font-semibold leading-[1.18] tracking-[-0.045em] sm:text-[3.1rem] lg:text-[4.35rem];
+  }
+
+  .headline-lg {
+    @apply text-[2rem] font-semibold leading-[1.2] tracking-[-0.04em] sm:text-[2.45rem] lg:text-[3.3rem];
+  }
+
+  .headline-md {
+    @apply text-[1.65rem] font-semibold leading-[1.26] tracking-[-0.035em] sm:text-[1.95rem] lg:text-[2.15rem];
+  }
+
+  .body-lg {
+    @apply text-[0.95rem] leading-9 text-muted sm:text-[1rem] sm:leading-10;
+  }
+
+  .panel {
+    @apply rounded-[2rem] border border-white/60 shadow-card backdrop-blur-sm;
+    background-color: rgba(251, 248, 242, 0.92);
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-accent px-5 py-3 text-sm font-medium text-white transition hover:-translate-y-0.5 hover:opacity-90;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-line bg-white/50 px-5 py-3 text-sm font-medium text-foreground transition hover:border-foreground hover:bg-white/80;
+  }
+
+  .soft-grid {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(17, 17, 17, 0.04) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .prose-skill {
+    @apply space-y-7 text-[0.95rem] leading-9 text-muted;
+  }
+
+  .prose-skill h2 {
+    @apply text-[1.7rem] font-semibold leading-[1.3] text-foreground;
+  }
+
+  .prose-skill h3 {
+    @apply text-[1.3rem] font-semibold leading-[1.35] text-foreground;
+  }
+
+  .prose-skill p,
+  .prose-skill li {
+    @apply text-[0.95rem] leading-9 text-muted;
+  }
+
+  .prose-skill ul {
+    @apply list-disc space-y-3 pl-6;
+  }
+
+  .prose-skill ol {
+    @apply list-decimal space-y-3 pl-6;
+  }
+
+  .prose-skill code {
+    @apply rounded bg-accentSoft px-1.5 py-0.5 text-sm text-foreground;
+  }
+
+  .prose-skill pre {
+    @apply overflow-x-auto rounded-3xl border border-line bg-[#f0ece3] p-5 text-sm text-foreground;
+  }
+}
